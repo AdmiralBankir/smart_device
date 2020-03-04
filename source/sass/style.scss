@@ -1,3 +1,15 @@
-h1 {
-  color: red;
+@import "./font.scss";
+@import "./blocks/visually-hidden.scss";
+@import "./mixin.scss";
+@import "./variables.scss";
+
+// blocks
+@import "./blocks/page-header.scss";
+@import "./blocks/boards.scss";
+
+body {
+  font-family: "PT Mono", "Arial";
+  font-style: normal;
+  font-weight: normal;
+  min-width: $mobile-min-width;
 }

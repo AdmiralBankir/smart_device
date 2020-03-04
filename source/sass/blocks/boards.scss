@@ -1,0 +1,140 @@
+.boards__title {
+  @include roboto-condensed-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+.boards__text-mobile {
+  display: none;
+}
+
+.boards__desc {
+  width: 84.7%;
+  font-size: 22px;
+  line-height: 34px;
+  margin: 0;
+  margin-bottom: 37px;
+  color: #FFFFFF;
+  padding-left: 94px;
+  position: relative;
+
+  &::before {
+    @include pseudo-el;
+    width: 66px;
+    height: 2px;
+    background: #FFFFFF;
+    top: 17px;
+    left: 0;
+  }
+}
+
+.boards__consult-link {
+  display: block;
+  text-decoration: none;
+  @include roboto-condensed-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: $light-blue;
+  border-radius: 5px;
+  margin-bottom: 93px;
+  padding: 17px 28px 14px 28px;
+  max-width: 407px;
+  margin-left: 94px
+}
+
+.boards__navigation-link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.5;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.boards {
+  padding-top: 231px;
+  width: 48.6%;
+  position: relative;
+}
+
+@media (max-width: $tablet-max-width) {
+  .boards__title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .boards__desc {
+    font-size: 18px;
+    line-height: 28px;
+    width: 356px;
+    padding-left: 56px;
+
+    &::before {
+      width: 33px;
+    }
+  }
+
+  .boards {
+    padding-top: 117px;
+    width: 445px;
+  }
+
+  .boards__consult-link {
+    padding: 17px 14px 14px 14px;
+    margin-left: 56px;
+    margin-bottom: 0;
+  }
+
+  .boards__navigation-link {
+    display: none;
+  }
+}
+
+
+@media (max-width: $mobile-max-width) {
+  .boards {
+    width: 89.6%;
+    padding-top: 231px;
+  }
+
+  .boards__title {
+    font-size: 40px;
+    line-height: 47px;
+    z-index: 100;
+    position: relative;
+  }
+
+  .boards__desc {
+    font-size: 16px;
+    line-height: 25px;
+    padding-left: 48px;
+    width: 245px;
+  }
+
+  .boards__text {
+    display: none;
+  }
+
+  .boards__text-mobile {
+    display: inline;
+  }
+
+  .boards__consult-link {
+    padding: 17px 11px 14px 11px;
+    margin: 0;
+  }
+}

@@ -1,0 +1,12 @@
+@mixin roboto-condensed-font {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+@mixin roboto-font {
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin pseudo-el {
+  position: absolute;
+  content: "";
+}
