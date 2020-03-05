@@ -126,6 +126,28 @@
   }
 }
 
+@media (min-width: $desktop-min-width) {
+  .page-header__contacts a:hover span{
+    color: $light-blue;
+  }
+
+  .page-header__contacts button:hover {
+    color: $light-blue;
+    border-color: $light-blue;
+  }
+}
+
+.page-header__contacts a:focus {
+  & span,
+  & svg {
+    opacity: 0.3;
+  }
+}
+
+.page-header__contacts button:focus {
+  opacity: 0.3;
+}
+
 @media (max-width: $tablet-max-width) {
 
   .page-header__mail span,

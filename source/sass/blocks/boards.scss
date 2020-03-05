@@ -71,6 +71,24 @@
   position: relative;
 }
 
+@media (min-width: $desktop-min-width) {
+  .boards__consult-link:hover {
+    & span {
+      color: $light-blue;
+    }
+    background-color: #FFFFFF;
+  }
+
+  .boards__navigation-link:hover {
+    color: $light-blue;
+  }
+}
+
+.boards__consult-link:focus,
+.boards__navigation-link:focus {
+  opacity: 0.3;
+}
+
 @media (max-width: $tablet-max-width) {
   .boards__title {
     font-size: 60px;
