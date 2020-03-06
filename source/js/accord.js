@@ -1,46 +1,38 @@
 'use strict';
+(function () {
+  var pageFooter = document.querySelector('.page-footer');
 
-var pageFooter = document.querySelector('.page-footer');
+  var footerNavList = pageFooter.querySelector('.page-footer__navigation ul');
+  var navToogle = document.querySelector('.page-footer__navigation .accord-btn');
 
-var footerNavList = pageFooter.querySelector('.page-footer__navigation ul');
-var navToogle = document.querySelector('.page-footer__navigation .accord-btn');
-
-var footerAddrList = pageFooter.querySelector('.page-footer__office-location address');
-var addrToggle = document.querySelector('.page-footer__office-location .accord-btn');
-
-
-pageFooter.classList.remove('page-footer--nojs');
-navToogle.classList.remove('accord-btn--opened');
+  var footerAddrList = pageFooter.querySelector('.page-footer__office-location address');
+  var addrToggle = document.querySelector('.page-footer__office-location .accord-btn');
 
 
-navToogle.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  if (navToogle.classList.contains('accord-btn--opened')) {
-    footerNavList.style.display = 'none';
-    navToogle.classList.remove('accord-btn--opened');
-  } else {
-    footerNavList.style.display = 'flex';
-    navToogle.classList.add('accord-btn--opened');
-  }
-})
+  pageFooter.classList.remove('page-footer--nojs');
+  navToogle.classList.remove('accord-btn--opened');
 
-addrToggle.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  if (addrToggle.classList.contains('accord-btn--opened')) {
-    footerAddrList.style.display = 'none';
-    addrToggle.classList.remove('accord-btn--opened');
-  } else {
-    footerAddrList.style.display = 'flex';
-    addrToggle.classList.add('accord-btn--opened');
-  }
-})
 
-// headerToggle.addEventListener('click', function () {
-//   if (pageHeader.classList.contains('page-header--closed')) {
-//     pageHeader.classList.remove('page-header--closed');
-//     pageHeader.classList.add('page-header--opened');
-//   } else {
-//     pageHeader.classList.add('page-header--closed');
-//     pageHeader.classList.remove('page-header--opened');
-//   }
-// });
+  navToogle.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    if (navToogle.classList.contains('accord-btn--opened')) {
+      footerNavList.style.display = 'none';
+      navToogle.classList.remove('accord-btn--opened');
+    } else {
+      footerNavList.style.display = 'flex';
+      navToogle.classList.add('accord-btn--opened');
+    }
+  });
+
+  addrToggle.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    if (addrToggle.classList.contains('accord-btn--opened')) {
+      footerAddrList.style.display = 'none';
+      addrToggle.classList.remove('accord-btn--opened');
+    } else {
+      footerAddrList.style.display = 'flex';
+      addrToggle.classList.add('accord-btn--opened');
+    }
+  });
+
+})();
