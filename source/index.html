@@ -18,13 +18,13 @@
     <h1 class="visually-hidden">Smart Device: поставка электронных комплектующих и производство печатных плат.</h1>
     <div class="page-header__inner">
       <div class="page-header__top">
-        <div class="page-header__logo">
-          <svg class="page-header__logo-icon" width="52" height="52">
+        <div class="page-header__logo company-logo company-logo--header">
+          <svg class="company-logo__icon company-logo__icon--header" width="52" height="52">
             <use xlink:href="#icon-header-logo" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
           </svg>
-          <p class="page-header__title">
-            <span class="page-header__company-name">Smart Device</span>
-            <span class="page-header__company-desc">умные технологии</span>
+          <p class="company-logo__title company-logo__title--header">
+            <span class="company-logo__name">Smart Device</span>
+            <span class="company-logo__desc">умные технологии</span>
           </p>
         </div>
 
@@ -57,21 +57,136 @@
           <a class="boards__navigation-link" aria-label="navigation" href="#">Скролл вниз</a>
         </div>
         <div class="page-header__img-wrapper">
-        <picture>
-          <source type="image/webp" media="(min-width: 1024px)" srcset="./img/boards-desktop@1x.webp, ./img/boards-desktop@2x.webp 2x"></source>
-          <source type="image/webp" media="(min-width: 768px)" srcset="./img/boards-tablet@1x.webp, ./img/boards-tablet@2x.webp 2x"></source>
-          <source type="image/webp" media="(min-width: 320px)" srcset="./img/boards-mobile@1x.webp, ./img/boards-mobile@2x.webp 2x"></source>
+          <picture>
+            <source type="image/webp" media="(min-width: 1024px)"
+              srcset="./img/boards-desktop@1x.webp, ./img/boards-desktop@2x.webp 2x">
+            </source>
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="./img/boards-tablet@1x.webp, ./img/boards-tablet@2x.webp 2x">
+            </source>
+            <source type="image/webp" media="(min-width: 320px)"
+              srcset="./img/boards-mobile@1x.webp, ./img/boards-mobile@2x.webp 2x">
+            </source>
 
-          <source media="(min-width: 768px)" srcset="./img/boards-tablet@1x.png, ./img/boards-tablet@2x.png 2x"></source>
-          <source media="(min-width: 320px)" srcset="./img/boards-mobile@1x.png, ./img/boards-mobile@2x.png 2x"></source>
-          <img src="./img/boards-desktop@1x.png" srcset="./img/boards-desktop@2x.png 2x" alt="Печатные платы">
-        </picture>
-      </div>
+            <source media="(min-width: 768px)" srcset="./img/boards-tablet@1x.png, ./img/boards-tablet@2x.png 2x">
+            </source>
+            <source media="(min-width: 320px)" srcset="./img/boards-mobile@1x.png, ./img/boards-mobile@2x.png 2x">
+            </source>
+            <img src="./img/boards-desktop@1x.png" srcset="./img/boards-desktop@2x.png 2x" alt="Печатные платы">
+          </picture>
+        </div>
       </div>
     </div>
   </header>
 
+  <footer class="page-footer page-footer--nojs">
+
+    <div class="page-footer__top-wrapper">
+      <div class="page-footer__logo-container">
+        <div class="page-header__logo company-logo company-logo--footer">
+          <svg class="company-logo__icon" width="52" height="52">
+            <use xlink:href="#icon-header-logo" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+          <p class="company-logo__title company-logo__title--footer">
+            <span class="company-logo__name">Smart Device</span>
+            <span class="company-logo__desc">умные технологии</span>
+          </p>
+        </div>
+
+        <p class="page-footer__copyright-info">1999-2018 SD Service Devices</p>
+
+        <ul class="page-footer__social-list">
+          <li>
+            <a href="#">
+              <svg width="27" height="27">
+                <use xlink:href="#icon-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width="27" height="27">
+                <use xlink:href="#icon-ok" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width="27" height="27">
+                <use xlink:href="#icon-vk" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__delimeter page-footer__delimeter--top"></div>
+
+      <div class="page-footer__nav-wrapper">
+        <nav class="page-footer__navigation">
+          <h2>Разделы сайта</h2>
+          <button class="page-footer_accord-btn accord-btn accord-btn--opened" type="button">
+            <div class="accord-btn__vertical"></div>
+            <div class="accord-btn__horizontal"></div>
+          </button>
+          <ul class="page-footer__navigation-list">
+            <li>
+              <a href="#">О компании</a>
+            </li>
+            <li>
+              <a href="#">Продукты</a>
+            </li>
+            <li>
+              <a href="#">Производство печатных плат</a>
+            </li>
+            <li>
+              <a href="#">Монтаж печатных плат</a>
+            </li>
+            <li>
+              <a href="#">Комплектующие</a>
+            </li>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="page-footer__delimeter page-footer__delimeter--middle"></div>
+
+        <section class="page-footer__office-location">
+          <h2>Наш офис</h2>
+          <button class="page-footer_accord-btn accord-btn accord-btn--opened" type="button">
+            <div class="accord-btn__vertical"></div>
+            <div class="accord-btn__horizontal"></div>
+          </button>
+          <address>
+            <p>г. Мытищи, Олимпийский проспект, д.10</p>
+            <ul>
+              <li><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
+              <li><a href="tel:+749250038767">+7 (925) 003-87-67</a></li>
+              <li><a href="tel:+7492692608079">+7 (926) 926-080-79</a></li>
+            </ul>
+          </address>
+        </section>
+      </div>
+    </div>
+
+    <div class="page-footer__delimeter"></div>
+
+    <section class="page-footer__copyright">
+      <p>Все права защищены</p>
+      <p>1999-2018 SD Service Devices</p>
+      <p><a href="#">Условия конфиденциальности</a></p>
+      <p><a href="#">Developed by wow studio</a></p>
+    </section>
+
+  </footer>
+
   <script src="./js/picturefill.js"></script>
+  <script src="./js/accord.js"></script>
 </body>
 
 </html>

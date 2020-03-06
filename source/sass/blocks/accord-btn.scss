@@ -1,0 +1,21 @@
+.accord-btn {
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+
+  & div {
+    width: 16px;
+    height: 1px;
+    background: #C4C4C4;
+  }
+
+  &__horizontal {
+    transform: rotate(90deg);
+  }
+
+  &--opened .accord-btn__horizontal {
+    display: none;
+  }
+}
