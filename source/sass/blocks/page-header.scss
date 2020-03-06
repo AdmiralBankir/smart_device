@@ -97,11 +97,13 @@
 @media (min-width: $desktop-min-width) {
   .page-header__contacts a:hover span{
     color: $light-blue;
+    transition: all $transition-time $transition-function;
   }
 
   .page-header__contacts button:hover {
     color: $light-blue;
     border-color: $light-blue;
+    transition: all $transition-time $transition-function;
   }
 }
 

@@ -149,6 +149,7 @@
   .page-footer__social-list a:hover {
     & svg {
       transform: scale(1.2);
+      transition: all $transition-time $transition-function;
     }
   }
 
@@ -156,6 +157,7 @@
   .page-footer__office-location a:hover,
   .page-footer__navigation-list a:hover {
     color: $light-blue;
+    transition: all $transition-time $transition-function;
   }
 }
 
