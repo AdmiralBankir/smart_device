@@ -67,3 +67,42 @@
     }
   }
 }
+
+@media (max-width: $tablet-max-width) {
+  .advantages {
+    padding: 54px 3.3% 59px;
+  }
+
+  .advantages ul>li {
+    padding: 24px 26px 12px;
+
+    & svg {
+      margin-bottom: 13px;
+    }
+
+    &:nth-child(3) {
+      padding-top: 27px;
+      padding-right: 20px;
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .advantages ul {
+    display: block;
+
+    & h3 {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    & li {
+      padding-bottom: 16px;
+      min-height: 232px;
+    }
+
+    &>li:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
