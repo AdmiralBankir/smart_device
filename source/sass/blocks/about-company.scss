@@ -44,7 +44,7 @@
 }
 
 
-.about-company p+p {
+.about-company p + p {
   margin-top: 20px;
 }
 
@@ -74,7 +74,6 @@
 }
 
 @media (max-width: $tablet-max-width) {
-
   .about-company {
     padding: 0 3.3% 83px;
   }
@@ -103,7 +102,7 @@
 
 
     /* создаём многоточие … */
-    &:before {
+    &::before {
       /* многоточие в конце */
       content: "..";
       /* абсолютное позиционирование */
@@ -114,7 +113,7 @@
     }
 
     /* спрятать многоточие … если у нас есть текст, который меньше или равен количеству максимальный строк */
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       /* установить позицию в правый нижний угол блока */
@@ -144,10 +143,6 @@
     padding-bottom: 65px;
   }
 
-  .about-company h2 {
-    margin-bottom: 18px;
-  }
-
   .about-company img {
     display: none;
   }
@@ -159,6 +154,7 @@
   .about-company h2 {
     font-size: 28px;
     line-height: 39px;
+    margin-bottom: 18px;
   }
 
   .about-company p {

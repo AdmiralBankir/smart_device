@@ -6,7 +6,7 @@
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
   margin-bottom: 31px;
 }
@@ -21,7 +21,7 @@
   line-height: 34px;
   margin: 0;
   margin-bottom: 37px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-left: 94px;
   position: relative;
 
@@ -29,16 +29,16 @@
     @include pseudo-el;
     width: 66px;
     height: 2px;
-    background: #FFFFFF;
+    background: #ffffff;
     top: 17px;
     left: 0;
   }
 }
 
 .boards__consult-link {
+  @include roboto-condensed-font;
   display: block;
   text-decoration: none;
-  @include roboto-condensed-font;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -46,20 +46,20 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: $light-blue;
   border-radius: 5px;
   margin-bottom: 93px;
   padding: 17px 28px 14px 28px;
   max-width: 407px;
-  margin-left: 94px
+  margin-left: 94px;
 }
 
 .boards__navigation-link {
   text-decoration: none;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.5;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
@@ -74,7 +74,7 @@
 @media (min-width: $desktop-min-width) {
   .boards__consult-link:hover {
     transition: all $transition-time $transition-function;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 
   .boards__consult-link:hover span {
