@@ -3,6 +3,8 @@
 @import "./mixin.scss";
 @import "./variables.scss";
 @import "./normalize.scss";
+@import "./common.scss";
+
 
 // blocks
 @import "./blocks/page-header.scss";
@@ -12,10 +14,5 @@
 @import "./blocks/accord-btn.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/about-company.scss";
+@import "./blocks/services.scss";
 
-body {
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  min-width: $mobile-min-width;
-}
