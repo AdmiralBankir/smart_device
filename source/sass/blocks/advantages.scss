@@ -6,6 +6,19 @@
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
+  position: relative;
+  z-index: 22;
+
+  &::after {
+    @include pseudo-el;
+    width: 872px;
+    height: 873px;
+    top: 10px;
+    left: 15.2%;
+    right: 9.1%;
+    z-index: -1;
+    background: url("../img/triangle-2.svg");
+  }
 
   &>li {
     padding-top: 40px;
@@ -41,6 +54,7 @@
   padding-right: 19.7%;
   padding-top: 128px;
   padding-bottom: 110px;
+  transition: all $transition-time $transition-function;
 
   & svg {
     margin-bottom: 23px;
@@ -66,11 +80,26 @@
       }
     }
   }
+
+  .advantages ul::before {
+    @include pseudo-el;
+    width: 298px;
+    height: 298px;
+    left: -171px;
+    top: -55px;
+    z-index: -1;
+    background: url("../img/triangle-1.svg");
+  }
 }
 
 @media (max-width: $tablet-max-width) {
   .advantages {
     padding: 54px 3.3% 59px;
+  }
+
+  .advantages ul::after {
+    top: 137px;
+    left: 26%;
   }
 
   .advantages ul>li {
@@ -90,6 +119,10 @@
 @media (max-width: $mobile-max-width) {
   .advantages ul {
     display: block;
+
+    &::after {
+      display: none;
+    }
 
     & h3 {
       font-size: 20px;
