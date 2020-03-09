@@ -80,8 +80,8 @@
   <main>
     <section class="advantages" id="advantages-section">
       <h2 class="visually-hidden">Наши преимушества</h2>
-      <ul>
-        <li>
+      <ul class="advantages__list">
+        <li class="advantages__list-item">
           <svg width="29" height="35">
             <use xlink:href="#icon-watch" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
           </svg>
@@ -89,7 +89,7 @@
           <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
             заказы плат и комплектующих в самые короткие сроки</p>
         </li>
-        <li>
+        <li class="advantages__list-item">
           <svg width="35" height="35">
             <use xlink:href="#icon-hired" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
           </svg>
@@ -98,7 +98,7 @@
             Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
           </p>
         </li>
-        <li>
+        <li class="advantages__list-item advantages__list-item--confident">
           <svg width="36" height="31">
             <use xlink:href="#icon-detective" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
           </svg>
@@ -106,7 +106,7 @@
           <p>По желанию клиента мы обеспечиваем полную конфеденциальность.
           </p>
         </li>
-        <li>
+        <li class="advantages__list-item">
           <svg width="35" height="35">
             <use xlink:href="#icon-tag" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
           </svg>
@@ -138,7 +138,7 @@
     </section>
   </main>
 
-  <footer class="page-footer page-footer--nojs">
+  <footer class="page-footer">
 
     <div class="page-footer__top-wrapper">
       <div class="page-footer__logo-container">
@@ -156,7 +156,7 @@
 
         <ul class="page-footer__social-list">
           <li>
-            <a href="#">
+            <a class="page-footer__social-link" href="#">
               <span class="visually-hidden">Мы в Фейсбуке</span>
               <svg width="27" height="27">
                 <use xlink:href="#icon-fb" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
@@ -164,7 +164,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="page-footer__social-link" href="#">
               <span class="visually-hidden">Мы в Одноклассниках</span>
               <svg width="27" height="27">
                 <use xlink:href="#icon-ok" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
@@ -172,7 +172,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="page-footer__social-link" href="#">
               <span class="visually-hidden">Мы в Вконтакте</span>
               <svg width="27" height="27">
                 <use xlink:href="#icon-vk" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
@@ -185,7 +185,7 @@
       <div class="page-footer__delimeter page-footer__delimeter--top"></div>
 
       <div class="page-footer__nav-wrapper">
-        <nav class="page-footer__navigation">
+        <nav class="page-footer__navigation page-footer__navigation--nojs">
           <h2>Разделы сайта</h2>
           <button class="page-footer_accord-btn accord-btn accord-btn--opened" type="button" aria-label="show-list">
             <span class="accord-btn__vertical"></span>
@@ -240,10 +240,10 @@
 
     <section class="page-footer__copyright">
       <h2 class="visually-hidden">Правообладатели</h2>
-      <p>Все права защищены</p>
-      <p>1999-2018 SD Service Devices</p>
-      <p><a href="#">Условия конфиденциальности</a></p>
-      <p><a href="#">Developed by wow studio</a></p>
+      <p class="page-footer__copyright-law">Все права защищены</p>
+      <p class="page-footer__copyright-date">1999-2018 SD Service Devices</p>
+      <p class="page-footer__copyright-conditions"><a href="#">Условия конфиденциальности</a></p>
+      <p class="page-footer__copyright-develop"><a href="#">Developed by wow studio</a></p>
     </section>
 
   </footer>

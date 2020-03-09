@@ -1,4 +1,4 @@
-.advantages ul {
+.advantages__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -19,24 +19,25 @@
     z-index: -1;
     background: url("../img/triangle-2.svg");
   }
-
-  &>li {
-    padding-top: 40px;
-    padding-bottom: 49px;
-    padding-left: 44px;
-    padding-right: 42px;
-    border: 1px solid #EBEBEB;
-    border-left: 3px solid $light-blue;
-    box-sizing: border-box;
-
-    & p {
-      margin: 0;
-      font-size: 16px;
-      line-height: 22px;
-      color: #666666
-    }
-  }
 }
+
+.advantages__list-item {
+  padding-top: 40px;
+  padding-bottom: 49px;
+  padding-left: 44px;
+  padding-right: 42px;
+  border: 1px solid #EBEBEB;
+  border-left: 3px solid $light-blue;
+  box-sizing: border-box;
+}
+
+.advantages p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666
+}
+
 
 .advantages h3 {
   margin: 0;
@@ -55,87 +56,93 @@
   padding-top: 128px;
   padding-bottom: 110px;
   transition: all $transition-time $transition-function;
+}
 
-  & svg {
-    margin-bottom: 23px;
-    fill: $light-blue;
-  }
+.advantages svg {
+  margin-bottom: 23px;
+  fill: $light-blue;
 }
 
 @media (min-width: $desktop-min-width) {
-  .advantages ul>li {
+  .advantages__list-item {
     cursor: pointer;
     transition: all $transition-time $transition-function;
 
     &:hover {
       background: $light-blue;
-
-      & h3,
-      & p {
-        color: #ffffff;
-      }
-
-      & svg {
-        fill: #ffffff;
-      }
     }
   }
 
-  .advantages ul::before {
-    @include pseudo-el;
-    width: 298px;
-    height: 298px;
-    left: -171px;
-    top: -55px;
-    z-index: -1;
-    background: url("../img/triangle-1.svg");
+  .advantages__list-item:hover h3,
+  .advantages__list-item:hover p {
+    color: #ffffff;
   }
+
+  .advantages__list-item:hover svg {
+    fill: #ffffff;
+  }
+
 }
+
+.advantages__list::before {
+  @include pseudo-el;
+  width: 298px;
+  height: 298px;
+  left: -171px;
+  top: -55px;
+  z-index: -1;
+  background: url("../img/triangle-1.svg");
+}
+
 
 @media (max-width: $tablet-max-width) {
   .advantages {
     padding: 54px 3.3% 59px;
   }
 
-  .advantages ul::after {
+  .advantages__list::after {
     top: 137px;
     left: 26%;
   }
 
-  .advantages ul>li {
+  .advantages__list-item {
     padding: 24px 26px 12px;
+  }
 
-    & svg {
-      margin-bottom: 13px;
-    }
+  .advantages svg {
+    margin-bottom: 13px;
+  }
 
-    &:nth-child(3) {
-      padding-top: 27px;
-      padding-right: 20px;
-    }
+  .advantages__list-item--confident {
+    padding-top: 27px;
+    padding-right: 20px;
   }
 }
 
 @media (max-width: $mobile-max-width) {
-  .advantages ul {
+  .advantages__list {
     display: block;
 
     &::after {
       display: none;
     }
 
-    & h3 {
-      font-size: 20px;
-      line-height: 28px;
+    &::before {
+      display: none;
     }
+  }
 
-    & li {
-      padding-bottom: 16px;
-      min-height: 232px;
-    }
+  .advantages__list h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
 
-    &>li:not(:last-child) {
-      margin-bottom: 20px;
-    }
+  .advantages__list-item {
+    padding-bottom: 16px;
+    min-height: 232px;
+  }
+
+  .advantages__list-item:not(:last-child) {
+    margin-bottom: 20px;
   }
 }

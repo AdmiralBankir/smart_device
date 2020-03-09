@@ -4,19 +4,19 @@
   padding: 0;
   cursor: pointer;
   background: transparent;
+}
 
-  & span {
-    display: block;
-    width: 16px;
-    height: 1px;
-    background: #C4C4C4;
-  }
+.accord-btn span {
+  display: block;
+  width: 16px;
+  height: 1px;
+  background: #C4C4C4;
+}
 
-  &__horizontal {
-    transform: rotate(90deg);
-  }
+.accord-btn__horizontal {
+  transform: rotate(90deg);
+}
 
-  &--opened .accord-btn__horizontal {
-    display: none;
-  }
+.accord-btn--opened .accord-btn__horizontal {
+  display: none;
 }

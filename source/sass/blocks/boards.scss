@@ -74,11 +74,13 @@
 @media (min-width: $desktop-min-width) {
   .boards__consult-link:hover {
     transition: all $transition-time $transition-function;
-    & span {
-      color: $light-blue;
-    }
     background-color: #FFFFFF;
   }
+
+  .boards__consult-link:hover span {
+    color: $light-blue;
+  }
+
 
   .boards__navigation-link:hover {
     color: $light-blue;

@@ -2,6 +2,7 @@
 (function () {
   var pageFooter = document.querySelector('.page-footer');
 
+  var footerNavigation = pageFooter.querySelector('.page-footer__navigation');
   var footerNavList = pageFooter.querySelector('.page-footer__navigation ul');
   var navToogle = document.querySelector('.page-footer__navigation .accord-btn');
 
@@ -9,7 +10,7 @@
   var addrToggle = document.querySelector('.page-footer__office-location .accord-btn');
 
 
-  pageFooter.classList.remove('page-footer--nojs');
+  footerNavigation.classList.remove('page-footer__navigation--nojs');
   navToogle.classList.remove('accord-btn--opened');
 
 
