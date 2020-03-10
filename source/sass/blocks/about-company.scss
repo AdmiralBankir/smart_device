@@ -10,8 +10,7 @@
   font-size: 36px;
   line-height: 51px;
   color: #666666;
-  margin: 0;
-  margin-bottom: 18px;
+  margin: 0 0 18px;
 }
 
 .about-company p {
@@ -43,11 +42,13 @@
   transition: all $transition-time $transition-function;
 }
 
-
-.about-company p + p {
-  margin-top: 20px;
+.about-company p {
+  margin-bottom: 20px;
 }
 
+.about-company__last-paragraph {
+  margin-bottom: 0;
+}
 @media (min-width: $desktop-min-width) {
   .about-company a:hover {
     background: $light-blue;
@@ -65,6 +66,7 @@
       transform: rotate(180deg);
       left: -250px;
       top: -400px;
+      z-index: -1;
     }
   }
 }
@@ -72,7 +74,6 @@
 .about-company a:focus {
   opacity: 0.3;
 }
-
 @media (max-width: $tablet-max-width) {
   .about-company {
     padding: 0 3.3% 83px;
@@ -88,42 +89,27 @@
   }
 
   .about-company__last-paragraph {
-    /* стили для мноточия '…' */
-    /* спрятать текст если у более N строк */
     overflow: hidden;
-    /* для установки '…' в абсолютную позицию */
     position: relative;
-    /* max-height = line-height (1.2) * число строк (3) */
     max-height: 5.5em;
-    /* исправлиление проблемы когда последнее слово не соединяется с правой стороны */
     text-align: justify;
-    /* место для многоточия '…' */
     padding-right: 1.2em;
 
-
-    /* создаём многоточие … */
     &::before {
-      /* многоточие в конце */
       content: "..";
-      /* абсолютное позиционирование */
       position: absolute;
-      /* установить позицию в правый нижний угол блока */
       right: 0;
       bottom: 0;
     }
 
-    /* спрятать многоточие … если у нас есть текст, который меньше или равен количеству максимальный строк */
     &::after {
       content: "";
       position: absolute;
-      /* установить позицию в правый нижний угол блока */
       right: 0;
-      /* установить width и height */
       width: 1em;
       height: 1em;
       margin-top: 0.2em;
-      /* цвет фона перед блоком */
-      background: white;
+      background: #ffffff;
     }
   }
 
@@ -137,7 +123,6 @@
     margin-left: -26px;
   }
 }
-
 @media (max-width: $mobile-max-width) {
   .about-company {
     padding-bottom: 65px;

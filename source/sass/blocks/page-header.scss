@@ -76,6 +76,7 @@
   margin-left: 10%;
   position: relative;
   z-index: 2;
+  width: 100%;
 }
 
 
@@ -183,7 +184,7 @@
     &::after {
       background-image: url("../img/triangle-mobile.png");
       width: 320px;
-      height: 529px;
+      height: 438px;
       top: -45px;
     }
   }
