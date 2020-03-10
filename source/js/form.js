@@ -2,7 +2,7 @@
 'use strict';
 (function () {
   window.addEventListener('DOMContentLoaded', function () {
-    function setCursorPosition(pos, elem) {
+    var setCursorPosition = function (pos, elem) {
       elem.focus();
       if (elem.setSelectionRange) {
         elem.setSelectionRange(pos, pos);
@@ -17,12 +17,10 @@
         range.moveStart('character', pos);
 
         range.select();
-
       }
+    };
 
-    }
-
-    function mask(event) {
+    var mask = function(event) {
 
       var matrix = '+7(___)___-__-__';
 
@@ -49,27 +47,29 @@
         setCursorPosition(this.value.length, this);
       }
 
-    }
+    };
 
-    var input = document.querySelector('form input[type=tel]');
-    var checkbox = document.querySelector('form input[type=checkbox]');
-    var btn = document.querySelector('form button[type=submit]');
+    var addCheckboxListener = function(checkbox, btn) {
+      checkbox.addEventListener('change', function () {
+        checkbox.checked ? btn.removeAttribute('disabled') : btn.setAttribute('disabled', true);
+      });
+    };
 
-    checkbox.addEventListener('change', function () {
-      if (checkbox.checked) {
-        btn.removeAttribute('disabled');
-      } else {
-        btn.setAttribute('disabled', true);
-      }
+    var inputs = document.querySelectorAll('form input[type=tel]');
+    var checkboxes = document.querySelectorAll('form input[type=checkbox]');
+    var btns = document.querySelectorAll('form button[type=submit]');
+
+    inputs.forEach(function (input, index) {
+
+      input.addEventListener('input', mask, false);
+
+      input.addEventListener('focus', mask, false);
+
+      input.addEventListener('blur', mask, false);
+
+      addCheckboxListener(checkboxes[index], btns[index]);
+
     });
-
-    input.addEventListener('input', mask, false);
-
-    input.addEventListener('focus', mask, false);
-
-    input.addEventListener('blur', mask, false);
-
-
 
   });
 

@@ -1,0 +1,61 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 490px;
+  min-height: 605px;
+  background-color: $light-blue;
+  display: none;
+  z-index: 100500;
+}
+
+.modal--active {
+  display: block;
+}
+
+.modal__title {
+  margin-bottom: 15px;
+}
+
+.modal__wrapper {
+  width: calc(100% - 80px);
+  padding: 33px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal__form-name,
+.modal__form-phone,
+.modal__form-question {
+  margin-bottom: 30px;
+}
+
+.modal__wrapper button {
+  padding: 10px 25px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.modal__checkbox-label {
+  padding-left: 50px;
+  display: block;
+
+  &::before {
+    top: 0;
+    left: 0;
+  }
+}
+
+.modal__button-close {
+  cursor: pointer;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 16.5px;
+  height: 16.5px;
+  position: absolute;
+  top: 20px;
+  right: 20.5px;
+}

@@ -16,7 +16,7 @@
   line-height: 22px;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 30px;
 }
 
 .form input,
@@ -36,6 +36,9 @@
   width: 100%;
 }
 
+.form textarea {
+  resize: none;
+}
 
 .form__submit button {
   @include roboto-condensed-font;
