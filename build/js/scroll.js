@@ -1,1 +1,1 @@
-"use strict";document.querySelectorAll('a[href*="#"]').forEach(function(e){var t=e.getAttribute("href").substr(1),r=document.getElementById(t);r&&r.scrollIntoView({behavior:"smooth"})});
+"use strict";document.querySelectorAll('a[href*="#"]').forEach(function(e){var n;(n=e).addEventListener("click",function(e){e.preventDefault();var t=n.getAttribute("href").substr(1),r=document.getElementById(t);r&&r.scrollIntoView({behavior:"smooth"})})});
