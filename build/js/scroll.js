@@ -1,0 +1,1 @@
+"use strict";document.querySelectorAll('a[href*="#"]').forEach(function(e){var t=e.getAttribute("href").substr(1),r=document.getElementById(t);r&&r.scrollIntoView({behavior:"smooth"})});
