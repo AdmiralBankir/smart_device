@@ -1,5 +1,8 @@
 'use strict';
 (function () {
+
+  var ESC_KEY = 27;
+
   var modal = document.querySelector('.modal');
   var form = modal.querySelector('form');
   var overlay = document.querySelector('.overlay');
@@ -13,6 +16,11 @@
   var isStorageSupport = true;
   var storageName = '';
   var storagePhone = '';
+
+  var closePopUp = function () {
+    modal.classList.remove('modal--active');
+    overlay.classList.remove('overlay--active');
+  };
 
   try {
     storageName = localStorage.getItem('userName');
@@ -35,11 +43,22 @@
     }
   });
 
+
   closeBtn.addEventListener('click', function (evt) {
     evt.preventDefault();
-    modal.classList.remove('modal--active');
-    overlay.classList.remove('overlay--active');
+    closePopUp();
   });
+
+  overlay.addEventListener('click', function () {
+    closePopUp();
+  });
+
+  document.addEventListener('keyup', function (e) {
+    if (e.keyCode === ESC_KEY) {
+      closePopUp();
+    }
+  });
+
 
   form.addEventListener('submit', function () {
     if (isStorageSupport) {
