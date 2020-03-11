@@ -81,6 +81,7 @@
   flex-direction: column;
   justify-content: space-between;
   transition: all $transition-time $transition-function;
+  position: relative;
 }
 
 .services__list-item h3 {
@@ -121,6 +122,12 @@
 
   .services {
     padding: 53px 3.3% 78px;
+  }
+
+  .services__arrow-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 
   .services__list {
