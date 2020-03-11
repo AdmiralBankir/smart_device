@@ -17,7 +17,7 @@
 }
 
 .feedback__form-wrapper button {
-  width: 270px;
+  width: 315px;
   min-height: 45px;
 }
 
@@ -36,7 +36,7 @@
 .feedback__submit {
   display: flex;
   width: 100%;
-  margin-top: 43px;
+  margin-top: 34px;
 }
 
 .feedback__submit label {
@@ -46,7 +46,7 @@
 }
 
 .feedback__img-wrapper {
-  margin-top: 64px;
+  margin-top: 68px;
   position: relative;
   z-index: 2;
 
@@ -55,7 +55,7 @@
     width: 611px;
     height: 487px;
     top: -73px;
-    left: -190px;
+    left: -151px;
     z-index: -1;
     background-image: url("../img/triangle-desktop.png");
   }
@@ -74,22 +74,32 @@
 .feedback__form-phone {
   margin-left: 5%;
 }
+
 @media (max-width: $tablet-max-width) {
   .feedback__img-wrapper {
     display: none;
   }
 
   .feedback {
-    padding: 83px 11.3% 103px 12%;
+    padding: 77px 11.3% 105px 12%;
   }
 
   .feedback__form-wrapper {
     width: 100%;
   }
+
+  .feedback__submit {
+    margin-top: 45px;
+  }
 }
+
 @media (max-width: $mobile-max-width) {
   .feedback__form-wrapper form {
     display: block;
+  }
+
+  .feedback {
+    padding: 30px 5% 41px;
   }
 
   .feedback__form-name,
@@ -107,6 +117,7 @@
 
   .feedback__submit {
     display: block;
+    margin-top: 23px;
   }
 
   .feedback__form-wrapper button {
@@ -117,5 +128,10 @@
     margin-left: 32px;
     margin-top: 32px;
     width: auto;
+  }
+
+  .feedback__form-wrapper textarea {
+    margin-top: 33px;
+    height: 106px;
   }
 }

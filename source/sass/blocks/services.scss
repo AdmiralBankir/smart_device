@@ -1,10 +1,17 @@
 .services {
   background: #1b2d37;
-  padding: 191px 19.7% 127px;
+  padding: 92px 19.7% 129px;
 }
 
 .services__caption {
-  display: none;
+  @include roboto-condensed-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+  margin: 0 0 46px;
+  padding: 0;
 }
 
 .services h3 {
@@ -18,7 +25,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:space-between;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -42,27 +49,33 @@
 .services__list li {
   background-repeat: no-repeat;
   background-size: cover;
-  width: 31%;
+  width: 31.6%;
   min-height: 620px;
 }
 
 .services__list-item--production {
   background: url("../img/services-production-desktop@1x.png");
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
     background: url("../img/services-production-desktop@2x.png");
   }
 }
 
 .services__list-item--mounting {
   background: url("../img/services-mounting-desktop@1x.png");
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
     background: url("../img/services-mounting-desktop@2x.png");
   }
 }
 
 .services__list-item--goods {
   background: url("../img/services-goods-desktop@1x.png");
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
     background: url("../img/services-goods-desktop@2x.png");
   }
 }
@@ -108,20 +121,12 @@
 }
 
 @media (max-width: $tablet-max-width) {
-  .services__caption {
-    @include roboto-condensed-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 45px;
-    color: #ffffff;
-    display: block;
-    margin: 0 0 46px;
-    padding: 0;
+  .services {
+    padding: 48px 3.3% 78px;
   }
 
-  .services {
-    padding: 53px 3.3% 78px;
+  .services__caption {
+    margin-bottom: 39px;
   }
 
   .services__arrow-wrapper {
@@ -151,21 +156,27 @@
 
   .services__list-item--production {
     background: url("../img/services-production-tablet@1x.png");
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
       background: url("../img/services-production-tablet@2x.png");
     }
   }
 
   .services__list-item--mounting {
     background: url("../img/services-mounting-tablet@1x.png");
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
       background: url("../img/services-mounting-tablet@2x.png");
     }
   }
 
   .services__list-item--goods {
     background: url("../img/services-goods-tablet@1x.png");
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
       background: url("../img/services-goods-tablet@2x.png");
     }
   }
@@ -175,40 +186,62 @@
     min-height: 256px;
   }
 }
+
 @media (max-width: $mobile-max-width) {
   .services {
-    padding: 53px 3.3% 64px;
+    padding: 53px 0 65px;
+  }
+
+  .services__list {
+    width: calc(100% - 31px);
+    margin: 0 auto;
   }
 
   .services__caption {
     font-size: 28px;
     line-height: 39px;
-    margin-bottom: 37px;
+    margin-bottom: 38px;
+    margin-left: 27px;
+  }
+
+  .services__list-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 
   .services__list-item h3 {
     margin-top: 23px;
-    margin-left: 35px;
-    width: 51%;
+    margin-left: 25px;
+    width: 53%;
+  }
+
+  .services__list-item--goods h3 {
+    margin-top: 31px;
+    margin-left: 34px;
   }
 
   .services__list-item--production {
     background: url("../img/services-production-mobile@1x.png");
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
       background: url("../img/services-production-mobile@2x.png");
     }
   }
 
   .services__list-item--mounting {
     background: url("../img/services-mounting-mobile@1x.png");
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
       background: url("../img/services-mounting-mobile@2x.png");
     }
   }
 
   .services__list-item--goods {
     background: url("../img/services-goods-mobile@1x.png");
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
       background: url("../img/services-goods-mobile@2x.png");
     }
   }

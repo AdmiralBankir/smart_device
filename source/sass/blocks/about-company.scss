@@ -1,6 +1,10 @@
 .about-company {
   display: flex;
-  padding: 0 19.7% 110px;
+  padding: 0 18% 96px;
+}
+
+.about-company__desc-wrapper {
+  margin-left: -10px;
 }
 
 .about-company h2 {
@@ -21,7 +25,7 @@
 }
 
 .about-company a {
-  padding: 10px 25px;
+  padding: 12px 25px;
   display: block;
   text-align: center;
   text-decoration: none;
@@ -36,9 +40,9 @@
   border: 1px solid $light-blue;
   box-sizing: border-box;
   border-radius: 5px;
-  width: 180px;
+  width: 183px;
   min-height: 45px;
-  margin-top: 35px;
+  margin-top: 41px;
   transition: all $transition-time $transition-function;
 }
 
@@ -64,8 +68,8 @@
       height: 873px;
       background: url("../img/triangle-2.svg");
       transform: rotate(180deg);
-      left: -250px;
-      top: -400px;
+      left: -192px;
+      top: -345px;
       z-index: -1;
     }
   }
@@ -76,7 +80,7 @@
 }
 @media (max-width: $tablet-max-width) {
   .about-company {
-    padding: 0 3.3% 83px;
+    padding: 0 3.3% 73px;
   }
 
   .about-company h2 {
@@ -125,7 +129,7 @@
 }
 @media (max-width: $mobile-max-width) {
   .about-company {
-    padding-bottom: 65px;
+    padding-bottom: 75px;
   }
 
   .about-company img {

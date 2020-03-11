@@ -32,7 +32,6 @@
 
 .page-footer li {
   list-style: none;
-  margin-right: auto;
 }
 
 .page-footer a {
@@ -70,7 +69,7 @@
 }
 
 .page-footer__copyright {
-  padding-left: 13.3%;
+  padding-left: 13.2%;
   padding-right: 13.4%;
   display: flex;
   padding-top: 14px;
@@ -89,6 +88,7 @@
   display: flex;
   justify-content: space-between;
   width: 112px;
+  margin-top: 50px;
 }
 
 .page-footer__office-location address {
@@ -108,16 +108,11 @@
   flex-direction: column;
   flex-wrap: wrap;
   height: 100px;
-}
-
-.page-footer__logo-container {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  width: 83%;
 }
 
 .page-footer__copyright-date {
-  margin-left: 4.3%;
+  margin-left: 4.8%;
 }
 
 .page-footer__copyright-conditions {
@@ -132,7 +127,7 @@
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
-  margin-left: 14.7%;
+  margin-left: 13.8%;
 }
 @media (min-width: $desktop-min-width) {
   .page-footer__social-link:hover svg {
@@ -171,15 +166,29 @@
 
   .page-footer__top-wrapper {
     display: block;
-    margin-bottom: 33px;
+    margin-bottom: 36px;
   }
 
   .page-footer__logo-container {
     flex-direction: row;
     align-items: center;
-    padding: 19px 4.9% 26px 3.3%;
+    padding: 19px 3% 21px 3.3%;
     border-bottom: 1px solid rgba(98,105,98,.2);
     position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__navigation {
+    width: auto;
+  }
+
+  .page-footer h2 {
+    margin-bottom: 25px;
+  }
+
+  .page-footer__social-list {
+    margin-top: 0;
   }
 
   .page-footer__nav-wrapper {
@@ -194,7 +203,7 @@
   }
 
   .page-footer__copyright {
-    padding: 21px 4.9% 24px 3.3%;
+    padding: 21px 3% 24px 3.3%;
     display: flex;
     justify-content: space-between;
   }
@@ -222,7 +231,8 @@
 @media (max-width: $mobile-max-width) {
   .page-footer__logo-container {
     display: block;
-    padding-bottom: 54px;
+    padding-bottom: 48px;
+    padding-top: 44px;
   }
 
   .page-footer__copyright-info {
@@ -266,7 +276,7 @@
 
   .page-footer__office-location address {
     width: 85vw;
-    margin-top: 36px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
