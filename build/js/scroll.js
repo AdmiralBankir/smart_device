@@ -1,1 +1,1 @@
-"use strict";document.querySelectorAll('a[href*="#"]').forEach(function(e){var n;(n=e).addEventListener("click",function(e){e.preventDefault();var t=n.getAttribute("href").substr(1),r=document.getElementById(t);r&&r.scrollIntoView({behavior:"smooth"})})});
+"use strict";!function(){for(var e=function(r){r.addEventListener("click",function(e){e.preventDefault();var t=r.getAttribute("href").substr(1),n=document.getElementById(t);n&&n.scrollIntoView({behavior:"smooth"})})},t=document.querySelectorAll('a[href*="#"]'),n=0;n<t.length;n++)e(t[n])}();

@@ -1,5 +1,6 @@
 'use strict';
 (function () {
+
   var setAnchorScroll = function (anchor) {
     anchor.addEventListener('click', function (evt) {
       evt.preventDefault();
@@ -15,7 +16,8 @@
 
   var anchors = document.querySelectorAll('a[href*="#"]');
 
-  anchors.forEach(function (anchor) {
-    setAnchorScroll(anchor);
-  });
+  for (var i = 0; i < anchors.length; i++) {
+    setAnchorScroll(anchors[i]);
+  }
+
 })();
