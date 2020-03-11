@@ -29,10 +29,12 @@
   padding: 14px 16px;
   box-sizing: border-box;
   @include placeholder(16px, 22px, #ffffff);
-  width: 100%;
 }
 
-.form__question {
+.form__question,
+.form textarea,
+.form__name input,
+.form__phone input {
   width: 100%;
 }
 
