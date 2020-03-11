@@ -19,9 +19,14 @@
   }
 }
 
+.advantages__list >li:nth-child(2n) {
+  margin-left: auto;
+}
+
 .advantages__list-item {
   flex-basis: 48.6%;
   flex-shrink: 1;
+  margin-bottom: 30px;
   padding-top: 40px;
   padding-bottom: 49px;
   padding-left: 44px;
