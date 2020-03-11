@@ -32,6 +32,7 @@
 
 .page-footer li {
   list-style: none;
+  margin-right: auto;
 }
 
 .page-footer a {
@@ -96,14 +97,16 @@
 
 .page-footer__navigation {
   flex-shrink: 1;
+  width: 100%;
+  min-width: 300px;
+  max-width: 600px;
 }
 
 .page-footer__navigation ul {
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0 3.4vw;
-  grid-auto-flow: column;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   height: 100px;
 }
 
@@ -268,8 +271,7 @@
 
   .page-footer__copyright {
     display: block;
-    padding: 0;
-    padding-top: 28px;
+    padding: 28px 0 0;
   }
 
   .page-footer__copyright p {
