@@ -59,17 +59,13 @@
     var checkboxes = document.querySelectorAll('form input[type=checkbox]');
     var btns = document.querySelectorAll('form button[type=submit]');
 
-    inputs.forEach(function (input, index) {
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].addEventListener('input', mask, false);
+      inputs[i].addEventListener('focus', mask, false);
+      inputs[i].addEventListener('blur', mask, false);
 
-      input.addEventListener('input', mask, false);
-
-      input.addEventListener('focus', mask, false);
-
-      input.addEventListener('blur', mask, false);
-
-      addCheckboxListener(checkboxes[index], btns[index]);
-
-    });
+      addCheckboxListener(checkboxes[i], btns[i]);
+    }
 
   });
 
