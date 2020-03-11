@@ -23,6 +23,7 @@
 
 .feedback__form-wrapper {
   width: 47.8%;
+  z-index: 33;
 }
 
 .feedback__submit-wrapper {
@@ -46,6 +47,18 @@
 
 .feedback__img-wrapper {
   margin-top: 64px;
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    @include pseudo-el;
+    width: 611px;
+    height: 487px;
+    top: -73px;
+    left: -190px;
+    z-index: -1;
+    background-image: url("../img/triangle-desktop.png");
+  }
 }
 
 .feedback__img-wrapper img {
@@ -61,21 +74,19 @@
 .feedback__form-phone {
   margin-left: 5%;
 }
-
 @media (max-width: $tablet-max-width) {
   .feedback__img-wrapper {
     display: none;
   }
 
   .feedback {
-    padding: 83px 11.3% 103px 12%
+    padding: 83px 11.3% 103px 12%;
   }
 
   .feedback__form-wrapper {
     width: 100%;
   }
 }
-
 @media (max-width: $mobile-max-width) {
   .feedback__form-wrapper form {
     display: block;
