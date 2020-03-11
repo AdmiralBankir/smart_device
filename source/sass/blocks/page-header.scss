@@ -2,6 +2,7 @@
   background-color: $backround-grey;
   background-image: url("../img/header-background.png");
   background-position: top center;
+  background-blend-mode: screen;
 }
 
 .page-header__mail,
@@ -9,7 +10,6 @@
   display: inline-flex;
   align-items: center;
 }
-
 
 .page-header a {
   text-decoration: none;
@@ -79,7 +79,6 @@
   width: 100%;
 }
 
-
 .page-header__img-wrapper {
   position: relative;
 
@@ -94,7 +93,6 @@
     background-image: url("../img/triangle-desktop.png");
   }
 }
-
 @media (min-width: $desktop-min-width) {
   .page-header__mail:hover span,
   .page-header__tel:hover span {
@@ -119,11 +117,10 @@
 .page-header__contacts button:focus {
   opacity: 0.3;
 }
-
 @media (max-width: $tablet-max-width) {
+  .page-header__call-btn,
   .page-header__mail span,
-  .page-header__tel span,
-  .page-header__call-btn {
+  .page-header__tel span {
     display: none;
   }
 
@@ -166,7 +163,6 @@
     right: 0;
   }
 }
-
 @media (max-width: $mobile-max-width) {
   .page-header__top {
     width: 89.6%;
