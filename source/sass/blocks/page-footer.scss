@@ -87,7 +87,7 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
-  width: 112px;
+  min-width: 112px;
   margin-top: 50px;
 }
 
@@ -230,7 +230,7 @@
 }
 @media (max-width: $mobile-max-width) {
   .page-footer__logo-container {
-    display: block;
+    flex-direction: column;
     padding-bottom: 48px;
     padding-top: 44px;
   }
@@ -238,10 +238,6 @@
   .page-footer__copyright-info {
     text-align: center;
     margin: 26px 0 31px;
-  }
-
-  .page-footer__social-list {
-    margin: 0 auto;
   }
 
   .page-footer__nav-wrapper {
