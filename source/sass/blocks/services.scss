@@ -10,7 +10,7 @@
   font-size: 36px;
   line-height: 51px;
   color: #ffffff;
-  margin: 0 0 46px;
+  margin: 0 0 26px;
   padding: 0;
 }
 
@@ -25,7 +25,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   list-style: none;
 }
 
@@ -51,6 +50,15 @@
   background-size: cover;
   width: 31.6%;
   min-height: 620px;
+  margin-top: 20px;
+}
+
+.services__list > li:not(:nth-child(4n)) {
+  margin-left: 10px;
+}
+
+.services__list > li:first-child {
+  margin-left: 0;
 }
 
 .services__list-item--production {
@@ -139,9 +147,14 @@
     display: block;
   }
 
-  .services__list li {
+  .services__list > li {
     width: auto;
     min-height: auto;
+    margin-top: 0;
+  }
+
+  .services__list>li:not(:nth-child(4n)) {
+    margin-left: 0;
   }
 
   .services__list-item:not(:last-child) {
