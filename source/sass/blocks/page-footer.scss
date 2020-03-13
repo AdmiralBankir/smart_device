@@ -86,9 +86,12 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
   min-width: 112px;
   margin-top: 50px;
+}
+
+.page-footer__social-list > li:not(:first-child) {
+  margin-left: 16px;
 }
 
 .page-footer__office-location address {
